@@ -1,13 +1,14 @@
 import os
 import requests
 import datetime
+import pytz
 
 
 TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 
-today = datetime.datetime.now()
+today = datetime.datetime.now(pytz.timezone('America/Sao_Paulo'))
 
 meses = {
     1: "janeiro", 2: "fevereiro", 3: "março", 4: "abril",
