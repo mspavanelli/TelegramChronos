@@ -2,7 +2,7 @@ name: Atualizar Nome do Grupo Telegram
 
 on:
   schedule:
-    - cron: "22 3 * * *"
+    - cron: "*/30 * * * *"
 
 jobs:
   run-script:

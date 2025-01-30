@@ -15,7 +15,7 @@ meses = {
     9: "setembro", 10: "outubro", 11: "novembro", 12: "dezembro"
 }
 
-formatted_name = f"{today.day} de {meses[today.month]} de {today.year}"
+formatted_name = f"{today.day} de {meses[today.month]} de {today.year} às {today.hour:02d}:{today.minute:02d}"
 
 url = f"https://api.telegram.org/bot{TOKEN}/setChatTitle"
 dados = {"chat_id": CHAT_ID, "title": formatted_name}
