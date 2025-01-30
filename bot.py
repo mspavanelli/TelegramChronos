@@ -1,8 +1,10 @@
+import os
 import requests
 import datetime
 
-TOKEN = ""
-CHAT_ID = ""
+
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 
 today = datetime.datetime.now()
