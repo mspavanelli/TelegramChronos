@@ -18,7 +18,10 @@ jobs:
           python-version: "3.12"
 
       - name: Instalar dependências
-        run: pip install requests pytz
+        run: pip install requests pytz pytest
+
+      - name: Executar testes
+        run: pytest
 
       - name: Executar o script
         env:
